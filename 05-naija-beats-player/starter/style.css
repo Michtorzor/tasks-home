@@ -1,0 +1,23 @@
+/* Naija Beats web player — starter stylesheet
+   Colours and fonts are ready for you. Build the layout below.
+   See BRIEF.md for the full task list and specs. */
+
+:root{
+  --indigo:#1B1464; --indigo-deep:#120D45; --indigo-soft:#2A2380; --mango:#FF9F1C; --lime:#C4E538;
+  --text:#F4F2FF; --muted:#A9A4D6; --line:#ffffff1a;
+  --font:"Sora", system-ui, sans-serif; --player-h:88px;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+img{max-width:100%;display:block}
+a{color:inherit}
+body{font-family:var(--font);background:var(--indigo-deep);color:var(--text);line-height:1.5}
+
+/* TODO 1: Build the page grid: 260px sidebar and main area, 8px gap and padding. */
+/* TODO 2: Make the sidebar sticky and tall enough to stop just above the player bar. */
+/* TODO 3: Build the banner: image, gradient fading into the indigo, text bottom-left, play and follow buttons overlapping the bottom edge. */
+/* TODO 4: Build the Popular list and the sticky Now playing card beside it. */
+/* TODO 5: Build the New releases album grid. The first album shows its play button; the rest show it on hover. */
+/* TODO 6: Build the fixed player bar. Add bottom padding to the body so it never covers content. */
+/* TODO 7: Below 1000px hide the Now playing card. */
+/* TODO 8: Below 700px: the sidebar becomes a bottom tab bar, the player sits just above it and shows only the track and pause button, track rows show cover, title and duration only, and albums go 2 per row. */

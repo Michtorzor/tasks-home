@@ -1,0 +1,21 @@
+/* Mama Put Kitchen — starter stylesheet
+   Colours and fonts are ready for you. Build the layout below.
+   See BRIEF.md for the full task list and specs. */
+
+:root{
+  --green:#0F4C3A; --yellow:#F2B705; --red:#C8331E; --paper:#FFFDF6; --ink:#1C1C1C; --muted:#5B5B52;
+  --font:"Bricolage Grotesque", system-ui, sans-serif;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+img{max-width:100%;display:block}
+a{color:inherit}
+body{font-family:var(--font);background:var(--paper);color:var(--ink);line-height:1.5}
+
+/* TODO 1: Build the sticky header: logo left, links and button right. */
+/* TODO 2: Build the two-column hero. The sticker sits over the top-right corner of the image; the review card hangs off the bottom-left edge. */
+/* TODO 3: Build the three menu cards. They must be equal height, with buttons lined up along the bottom. */
+/* TODO 4: Build the three steps in a row with a thick top border on each. */
+/* TODO 5: Build the About section with the image on the right (without changing the HTML order). */
+/* TODO 6: Build the footer. The copyright line must take the full width of its own row. */
+/* TODO 7: Make it responsive: below 760px everything stacks into one column, the nav links hide and the menu icon shows. */

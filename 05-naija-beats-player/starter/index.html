@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naija Beats — Web player</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <a class="brand" href="#"><img src="../assets/logo.svg" alt="" width="36" height="36"> Naija Beats</a>
+      <nav class="side-nav">
+        <a href="#" class="active"><img src="../assets/icons/home.svg" alt=""> Home</a>
+        <a href="#"><img src="../assets/icons/search.svg" alt=""> Search</a>
+        <a href="#"><img src="../assets/icons/library.svg" alt=""> Your library</a>
+      </nav>
+      <h2 class="side-title">Your playlists</h2>
+      <ul class="playlists">
+        <li><a href="#">Sunday jollof mix</a></li>
+        <li><a href="#">Gym, but make it Afro</a></li>
+        <li><a href="#">Road trip to Calabar</a></li>
+        <li><a href="#">Study with highlife</a></li>
+      </ul>
+    </aside>
+
+    <main class="main">
+      <section class="banner">
+        <img class="banner-img" src="../assets/images/artist-banner.jpg" alt="">
+        <div class="banner-text">
+          <p class="verified">Verified artist</p>
+          <h1>Ebi Waves</h1>
+          <p>4.2 million monthly listeners</p>
+        </div>
+        <div class="banner-actions">
+          <button class="btn-play" aria-label="Play"><img src="../assets/icons/play.svg" alt=""></button>
+          <button class="btn-follow">Follow</button>
+        </div>
+      </section>
+
+      <div class="columns">
+        <section class="popular">
+          <h2>Popular this week</h2>
+          <ol class="tracks">
+          <li class="track"><span class="num">1</span><img src="../assets/images/cover-sunrise-riddims.jpg" alt=""><div><strong>Morning in Bonny</strong><span>Ebi Waves</span></div><span class="plays">2.1M</span><span class="dur">3:42</span><button class="like" aria-label="Like"><img src="../assets/icons/heart.svg" alt=""></button></li>
+          <li class="track playing"><span class="num">2</span><img src="../assets/images/cover-lagoon-nights.jpg" alt=""><div><strong>Kalabari Love</strong><span>Kalio</span></div><span class="plays">1.8M</span><span class="dur">3:15</span><button class="like" aria-label="Like"><img src="../assets/icons/heart.svg" alt=""></button></li>
+          <li class="track"><span class="num">3</span><img src="../assets/images/cover-owambe-season.jpg" alt=""><div><strong>Aso Ebi</strong><span>DJ Ofonime</span></div><span class="plays">1.2M</span><span class="dur">4:05</span><button class="like" aria-label="Like"><img src="../assets/icons/heart.svg" alt=""></button></li>
+          <li class="track"><span class="num">4</span><img src="../assets/images/cover-third-mainland.jpg" alt=""><div><strong>Traffic Prayer</strong><span>Ebi Waves</span></div><span class="plays">960K</span><span class="dur">2:58</span><button class="like" aria-label="Like"><img src="../assets/icons/heart.svg" alt=""></button></li>
+          <li class="track"><span class="num">5</span><img src="../assets/images/cover-slow-harmattan.jpg" alt=""><div><strong>Dry Season</strong><span>Nneka Ihe</span></div><span class="plays">740K</span><span class="dur">3:30</span><button class="like" aria-label="Like"><img src="../assets/icons/heart.svg" alt=""></button></li>
+          </ol>
+        </section>
+
+        <aside class="now-card">
+          <img src="../assets/images/cover-lagoon-nights.jpg" alt="Lagoon Nights album cover">
+          <span class="live-tag">Now playing</span>
+          <h3>Kalabari Love</h3>
+          <p>Kalio, from Lagoon Nights</p>
+          <div class="lyric-teaser"><strong>Up next</strong><span>Aso Ebi — DJ Ofonime</span></div>
+        </aside>
+      </div>
+
+      <section class="albums-section">
+        <div class="section-head"><h2>New releases</h2><a href="#">Show all</a></div>
+        <div class="albums">
+          <a class="album" href="#"><div class="cover"><img src="../assets/images/cover-sunrise-riddims.jpg" alt=""><span class="play-fab"><img src="../assets/icons/play.svg" alt=""></span></div><h3>Sunrise Riddims</h3><p>Ebi Waves</p></a>
+          <a class="album" href="#"><div class="cover"><img src="../assets/images/cover-lagoon-nights.jpg" alt=""><span class="play-fab"><img src="../assets/icons/play.svg" alt=""></span></div><h3>Lagoon Nights</h3><p>Kalio</p></a>
+          <a class="album" href="#"><div class="cover"><img src="../assets/images/cover-owambe-season.jpg" alt=""><span class="play-fab"><img src="../assets/icons/play.svg" alt=""></span></div><h3>Owambe Season</h3><p>DJ Ofonime</p></a>
+          <a class="album" href="#"><div class="cover"><img src="../assets/images/cover-slow-harmattan.jpg" alt=""><span class="play-fab"><img src="../assets/icons/play.svg" alt=""></span></div><h3>Slow Harmattan</h3><p>Nneka Ihe</p></a>
+          <a class="album" href="#"><div class="cover"><img src="../assets/images/cover-garden-city-soul.jpg" alt=""><span class="play-fab"><img src="../assets/icons/play.svg" alt=""></span></div><h3>Garden City Soul</h3><p>Tamuno &amp; The Creeks</p></a>
+          <a class="album" href="#"><div class="cover"><img src="../assets/images/cover-danfo-drive.jpg" alt=""><span class="play-fab"><img src="../assets/icons/play.svg" alt=""></span></div><h3>Danfo Drive</h3><p>Kalio</p></a>
+          <a class="album" href="#"><div class="cover"><img src="../assets/images/cover-palm-wine-tapes.jpg" alt=""><span class="play-fab"><img src="../assets/icons/play.svg" alt=""></span></div><h3>Palm Wine Tapes</h3><p>Ọba Jẹ</p></a>
+          <a class="album" href="#"><div class="cover"><img src="../assets/images/cover-third-mainland.jpg" alt=""><span class="play-fab"><img src="../assets/icons/play.svg" alt=""></span></div><h3>Third Mainland</h3><p>Ebi Waves</p></a>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer class="player">
+    <div class="player-track">
+      <img src="../assets/images/cover-lagoon-nights.jpg" alt="">
+      <div><strong>Kalabari Love</strong><span>Kalio</span></div>
+      <button class="like is-liked" aria-label="Liked"><img src="../assets/icons/heart.svg" alt=""></button>
+    </div>
+    <div class="player-controls">
+      <div class="buttons">
+        <button aria-label="Shuffle"><img src="../assets/icons/shuffle.svg" alt=""></button>
+        <button aria-label="Previous"><img src="../assets/icons/prev.svg" alt=""></button>
+        <button class="pp" aria-label="Pause"><img src="../assets/icons/pause.svg" alt=""></button>
+        <button aria-label="Next"><img src="../assets/icons/next.svg" alt=""></button>
+      </div>
+      <div class="progress"><span>1:12</span><div class="bar"><div class="fill"></div><div class="knob"></div></div><span>3:15</span></div>
+    </div>
+    <div class="player-volume"><img src="../assets/icons/volume.svg" alt=""><div class="bar"><div class="fill" style="width:65%"></div></div></div>
+  </footer>
+</body>
+</html>

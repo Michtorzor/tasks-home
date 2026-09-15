@@ -1,0 +1,21 @@
+/* Garden City Fest — starter stylesheet
+   Colours and fonts are ready for you. Build the layout below.
+   See BRIEF.md for the full task list and specs. */
+
+:root{
+  --navy:#14213D; --magenta:#D6246E; --sun:#FFD23F; --teal:#0E7C7B; --paper:#FBF8F1; --ink:#14213D; --muted:#56607A;
+  --display:"Anton", Impact, sans-serif; --body:"Work Sans", system-ui, sans-serif;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+img{max-width:100%;display:block}
+a{color:inherit}
+body{font-family:var(--body);background:var(--paper);color:var(--ink);line-height:1.5}
+
+/* TODO 1: Build the hero at 88vh. The header, gradient, title, date details and stamp are all absolutely positioned inside it. */
+/* TODO 2: Build the yellow ticket bar and make it stick to the top of the screen. */
+/* TODO 3: Build the line-up cards. Each has a day sticker in the top-left and a name panel along the bottom. Kalio's card has a diagonal Headliner ribbon. */
+/* TODO 4: Build the timeline. The current item has a glowing magenta dot. */
+/* TODO 5: Build the venue map with three numbered hotspots and a You are at the gate pill that hangs below the image. */
+/* TODO 6: Build the fixed toast (top-right on desktop, bottom on mobile). */
+/* TODO 7: Mobile (below 600px): move the title to the top of the hero, put the date details at the bottom, and move the timeline times above each item. */
