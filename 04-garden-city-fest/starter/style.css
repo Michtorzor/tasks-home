@@ -11,7 +11,525 @@
 img{max-width:100%;display:block}
 a{color:inherit}
 body{font-family:var(--body);background:var(--paper);color:var(--ink);line-height:1.5}
+    
+@import url('https://fonts.googleapis.com/css2?family=Ga+Maamli&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  
+*,
+*::before
+*::after {
+  margin: 0 auto;
+  padding-top: 0;
+  box-sizing: border-box;
+}
 
+
+.site-header{
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  margin-top: 0;
+  margin-bottom: 30px;
+  align-items: center;
+  font-size: 20px;
+  position: fixed;
+  padding: 30px;
+  margin: 0 0 30px 0;
+  gap: 1rem;
+  z-index: 100;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.site-header .nav a{
+  margin: 10px;
+  text-decoration: none;
+  color: var(--paper);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-decoration: none;
+  color: var(--paper);
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.brand img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+}
+
+.nav {h
+  display: flex;
+  align-items: center;
+  gap: 30;
+}
+
+
+.nav a {
+  margin-right: 60px;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.nav a:hover{
+  color: var(--sun);
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.hero-bg{
+  position: relative;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0.8;
+}  
+
+.hero-shade{
+  position: absolute;
+  inset: 0;
+}
+
+.hero-title {
+  position: absolute;
+  left: 34px;
+  top: 200px;
+  color: var(--sun);
+  font-size: 150px;
+  line-height: 0.82;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  z-index: 3;
+  font-weight: 900;
+  line-height: 0.60;
+  transform: scaleY(2);
+  margin-top: 200px;
+}
+
+.hero-meta {
+  position: absolute;
+  right: 60px;
+  bottom: 140px;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--paper);
+}
+
+.hero-meta p {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 5px;
+}
+
+.hero-meta img {
+  width: 15px;
+  height: 15px;
+  background-color: var(--paper);
+}
+
+.hero-stamp {
+  position: absolute;
+  top: 200px;
+  right: 250px;
+  width: 180px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px dashed var(--magenta);
+  border-radius: 50%;
+  color: var(--paper);
+  text-align: center;
+  background-color: var(--magenta);
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 1.05;
+  transform: rotate(-12deg);
+  border-color: var(--paper);
+  z-index: 3;
+}
+
+.ticket-bar {
+  position: relative;
+  width: 100%;
+  justify-content: space-around;
+  min-height: 54px;
+  margin: 0 auto;
+  padding: 8px 25px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background-color: var(--sun);
+  border-top: 1px solid var(--ink);
+  border-bottom: 1px solid var(--ink);
+  color: var(--muted);
+}
+
+.ticket-bar p {
+   font-size: 20px;
+   color: var(--navy);
+   right: 200px;
+}
+
+.ticket-bar strong {
+  font-weight: 800;
+}
+
+.countdown {
+  display: flex;
+  gap: 40px;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 30px;
+}
+
+.countdown span {
+  display: flex;
+  line-height: 1;
+  font-size: 20px;
+  font-weight: 900;
+  align-items: last baseline;
+}
+
+.countdown span b {
+  font-size: 60px;
+  font-weight: 800;
+}
+
+.btn {
+  display: flex;
+  gap: 5px;
+  padding: 20px 45px;
+  background-color: var(--navy);
+  color: var(--paper);
+  border-radius: 12px;
+  font-size: 20px;
+  font-weight: 800;
+  text-decoration: none;
+  align-items: center;
+}
+
+.btn img {
+  background-color: var(--paper);
+}
+
+.btn:hover{
+  background: var(--magenta);
+}
+
+.lineup {
+  position: relative;
+  min-height: 230px;
+  padding: 24px 28px 30px;
+}
+
+.lineup h2{
+  margin-bottom: 17px;
+  color: var(--navy);
+  font-size: 50px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.artists {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.artist {
+   position: relative;
+   overflow: hidden;
+   border-radius: 12px;
+   overflow: hidden;
+}
+
+.artist img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.day-sticker {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  padding: 10px 20px;
+  color: var(--navy);
+  background-color: var(--paper);
+  font-size: 1.3rem;
+  font-weight: 900;
+  border-radius: 4px;
+  z-index: 2;
+}
+
+.artist-name {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 20px 20px;
+  background: #0e7b79;
+  background: linear-gradient(45deg lightblue blue);
+  overflow: hidden;
+  opacity: 0.99;
+
+}
+
+.artist-name h3 {
+   color: var(--paper);
+   font-size: 30px;
+   font-weight: 900;
+}
+
+.artist-name p {
+   font-size: 16px;
+   color: var(--paper);
+   font-weight: 600;
+}
+
+.schedule {
+  background: var(--navy);
+  color: var(--paper);
+  padding: 70px 60px 90px;
+  min-height: 650px;
+  overflow: hidden;
+}
+
+.schedule h2 {
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 1;
+  margin: 0 0 55px;
+  color: var(--paper);
+  letter-spacing: -1px;
+}
+
+/* Timeline container */
+.timeline {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* Vertical timeline line */
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  bottom: 15px;
+  left: 165px;
+  width: 2px;
+  background: var(--paper);
+}
+
+/* Each timeline item */
+.timeline li {
+  position: relative;
+  display: grid;
+  grid-template-columns: 120px 70px 1fr;
+  align-items: start;
+  min-height: 125px;
+  margin: 0;
+}
+
+/* Time */
+.timeline time {
+  grid-column: 1;
+  text-align: right;
+  padding-top: 7px;
+  padding-right: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--sun);
+}
+
+/* Circle on timeline */
+.timeline li::before {
+  content: "";
+  position: absolute;
+  left: 151px;
+  top: 5px;
+  width: 26px;
+  height: 26px;
+  border: 3px solid var(--sun);
+  border-radius: 50%;
+  background: var(--navy);
+  z-index: 2;
+}
+
+/* Content */
+.timeline li h3 {
+  grid-column: 3;
+  margin: 0;
+  padding-top: 5px;
+  font-size: 25px;
+  font-weight: 700;
+  color: var(--paper);
+  left: 30px;
+  position: relative;
+}
+
+.timeline li p {
+  grid-column: 3;
+  margin: 8px 0 0;
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--paper);
+  opacity: 0.75;
+  position: relative;
+  left: 30px;
+  bottom: 30px;
+}
+
+.timeline li.now::before {
+  border: none;
+  background: var(--magenta);
+  box-shadow: 0 0 15px rgba(236, 8, 127, 0.45);
+}
+
+.timeline li.now time {
+  color:var(--sun);
+}
+
+.timeline li.now h3 {
+  color: var(--magenta);
+  bottom: 7px;
+}
+
+.venue{
+  background: var(--paper);
+  padding: 90px 7%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.venue-text {
+  max-width: 1000px;
+  margin: 0 0 25px;
+}
+
+.venue-text h2 {
+  font-size: 65px;
+  font-weight: 900;
+  color: var(--navy);
+  line-height: 3;
+}
+
+.venue-text p{
+  max-width: 550px;
+  margin: 0 0 30px;
+  color: var(--navy);
+  opacity: 0.7;
+  line-height: 1.7;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.venue-text ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 25px;
+  
+}
+
+.venue-text ul li img{
+  gap: 4px;
+  margin: 0 0 ;
+}
+
+.venue-text li{
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1.50rem;
+  color: var(--navy);
+  margin-bottom: 18px;
+  font-weight: 500;
+}
+
+.venue-text li img {
+  width: 30px;
+  height: 30px;
+  opacity: 0.75;
+}
+
+.venue-map{
+  position: relative;
+  height: 320px;
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.venue-map img{
+   display: block;
+   width: 100%;
+   height: auto;
+}
+
+.hotspot{
+  position: absolute;
+  transform: translate(-50% -50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid var(--paper);
+  background:black;
+  color: var(--paper);
+  font-size: 12px;
+  font-weight: 400;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.hotspot:hover{
+  background: var(--muted);
+  transform: translate(-50% -50%);
+}
+
+.map-note{
+  position: absolute;
+  left: 110px;
+  padding: 10px 16px;
+  border-radius: 20px;
+  font-weight: 800;
+  font-size: 20px;
+  background-color: var(--magenta);
+  color: var(--paper);
+}
+  
+
+.site-footer{
+  padding: 30px 7%;
+  background-color: var(--paper);
+  color: var(--navy);
+}
+
+.site-footer p{
+  margin: 0;
+  font-size: 14px;
+  opacity: 0.75;
+}
 /* TODO 1: Build the hero at 88vh. The header, gradient, title, date details and stamp are all absolutely positioned inside it. */
 /* TODO 2: Build the yellow ticket bar and make it stick to the top of the screen. */
 /* TODO 3: Build the line-up cards. Each has a day sticker in the top-left and a name panel along the bottom. Kalio's card has a diagonal Headliner ribbon. */
